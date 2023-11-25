@@ -234,13 +234,6 @@ function App() {
                 placeholder={generatedText.length === 0 ? '' : 'Start Typing!...'}
             />
 
-<Helmet>
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Vina+Sans&display=swap');
-        </style>
-        </Helmet>
-
-
         </div>
 
     );

@@ -19,4 +19,7 @@
     <body class="font-sans antialiased">
         @inertia
     </body>
+    <style>
+            @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Vina+Sans&display=swap');
+        </style>
 </html>
