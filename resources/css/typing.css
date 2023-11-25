@@ -1,0 +1,92 @@
+:root {
+    --dark_color:#292629;
+    --red_one: #DC5C5E;
+  }
+  
+  body {
+    background-color: #292629;
+    color:aliceblue;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+  }
+  
+  .correct {
+    font-weight: bold;
+    color: #03C03C;
+  }
+  
+  .incorrect {
+    font-weight: bold;
+    color: #D2122E;
+  }
+  
+  .active {
+    font-weight: bold;
+    background-color: grey;
+    color: white;
+  }
+  
+  .App {
+    text-align: center;
+  }
+  
+  .AppContainer {
+    width: 75%;
+    margin: auto;
+  }
+  
+  .btn_red {
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: aliceblue;
+    --bs-btn-bg: var(--red_one);
+    --bs-btn-border-color: var(--red_one);
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: #d66567; 
+    --bs-btn-hover-border-color: #d66567; 
+    --bs-btn-focus-shadow-rgb: var(--red_one);
+    --bs-btn-active-color: var(--bs-btn-hover-color);
+    --bs-btn-active-bg: #b33a3c; 
+    --bs-btn-active-border-color: #b33a3c; 
+  }
+  
+  .baconform {
+    background-color:var(--dark_color);
+    color: var(--red_one);
+    border: 1px solid var(--red_one);
+  
+  }
+  
+  .userinput {
+    background-color:var(--dark_color);
+    outline: var(--red_one);
+    color: aliceblue;
+  }
+  
+  .baconform:focus, .userinput:focus {
+    border: 1px solid #007bff; 
+    outline: none; 
+    background-color:var(--dark_color);
+    color: aliceblue;
+  }
+  
+  
+  .select-container {
+    max-width: 200px; 
+    margin: auto;
+  }
+  
+  .form-container {
+    border: 1px solid var( --red_one); 
+    padding: 20px; 
+    border-radius: 8px; 
+    margin-bottom: 5%;
+    font-size: 20px;
+  }
+  
+  h1 {
+    font-family: 'Vina Sans', sans-serif;
+    color: var(--red_one);
+    font-size: 80px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
