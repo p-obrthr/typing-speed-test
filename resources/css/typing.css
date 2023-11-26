@@ -1,6 +1,7 @@
 :root {
     --dark_color:#292629;
     --red_one: #DC5C5E;
+    --blue_one: #007bff;
   }
   
   body {
@@ -20,8 +21,8 @@
   }
   
   .active {
+    font-size: 24px;
     font-weight: bold;
-    background-color: grey;
     color: white;
   }
   
@@ -62,7 +63,7 @@
   }
   
   .baconform:focus, .userinput:focus {
-    border: 1px solid #007bff; 
+    border: 1px solid var(--blue_one); 
     outline: none; 
     background-color:var(--dark_color);
     color: aliceblue;
