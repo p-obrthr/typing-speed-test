@@ -51,7 +51,7 @@ function Timer(props) {
                     <path d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64a.715.715 0 0 1 .012-.013l.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354a.512.512 0 0 1-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3" />
                 </svg>
                 <p style={{ display: "inline-block", marginLeft: "5px", color: timeElapsed > 0 ? "var(--blue_one)" : "aliceblue"}}>
-                     Time: {timeElapsed} s
+                     Time: <span style={{ fontSize: "22px" }}>{timeElapsed}</span> s
                 </p>
             </div>
             <div className="col-md-4">
@@ -60,7 +60,7 @@ function Timer(props) {
                     <path fillRule="evenodd" d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10m8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3" />
                 </svg>
                 <p style={{ display: "inline-block", marginLeft: "5px", color: timeElapsed > 0 ? "var(--blue_one)" : "aliceblue" }}>
-                    Speed: {((correctWords / minutes) || 0).toFixed(0)} WPM
+                    Speed: <span style={{ fontSize: "22px" }}>{((correctWords / minutes) || 0).toFixed(0)}</span> WPM
                 </p>
             </div>
             <div className="col-md-4">
@@ -69,7 +69,7 @@ function Timer(props) {
                  <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5zM10 8a1 1 0 1 1 2 0v5a1 1 0 1 1-2 0zm-6 4a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0zm4-3a1 1 0 0 1 1 1v3a1 1 0 1 1-2 0v-3a1 1 0 0 1 1-1"/>
             </svg>
                 <p style={{ display: "inline-block", marginLeft: "5px", color: timeElapsed > 0 ? "var(--blue_one)" : "aliceblue" }}>
-                    Accuracy: {((accuracyRate))} %
+                    Accuracy: <span style={{ fontSize: "22px" }}>{((accuracyRate))}</span> %
                 </p>
             </div>
         </div>
@@ -218,7 +218,7 @@ function App() {
                                 className="btn btn-primary btn_red"
                                 onClick={getText}
                             >
-                                get text
+                                {showAlert === true ? 'next' : 'get text'}
                             </button>
                         </div>
                     </div>
@@ -246,13 +246,12 @@ function App() {
                         })}
                     </p>
                 </div>
+                {showAlert && (
+                    <div className="alert alert-warning alert-dismissible fade show" role="alert" style={{ marginTop: "20px" }}>
+                        <strong>Holy guacamole!</strong> Wow, that was a good run.
+                    </div>)
+                }
             </div>
-            {showAlert && (
-                <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                    <strong>Holy guacamole!</strong> Wow, that was a good run.
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                </div>)
-            }
             <input
                 type="text"
                 className="form-control select-container custom-select my-1 mr-sm-2 userinput"

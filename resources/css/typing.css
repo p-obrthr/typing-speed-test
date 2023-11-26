@@ -74,12 +74,15 @@
     max-width: 200px; 
     margin: auto;
   }
+
+  .container {
+    margin-bottom: 3%;
+  }
   
   .form-container {
     border: 1px solid var( --red_one); 
     padding: 20px; 
     border-radius: 8px; 
-    margin-bottom: 5%;
     font-size: 20px;
   }
   
