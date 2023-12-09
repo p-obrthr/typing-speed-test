@@ -1,1 +1,21 @@
+:root {
+    --dark_color:#292629;
+    --red_one: #DC5C5E;
+    --blue_one: #007bff;
+  }
+  
+  body {
+    background-color: #292629;
+    color:aliceblue;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+  }
 
+  .App {
+    text-align: center;
+  }
+  
+
+.NavContainer {
+    width: 75%;
+    margin: auto;
+  }

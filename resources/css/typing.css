@@ -1,14 +1,4 @@
-:root {
-    --dark_color:#292629;
-    --red_one: #DC5C5E;
-    --blue_one: #007bff;
-  }
-  
-  body {
-    background-color: #292629;
-    color:aliceblue;
-    font-family: 'Kdam Thmor Pro', sans-serif;
-  }
+
   
   .correct {
     font-weight: bold;
@@ -24,15 +14,6 @@
     font-size: 24px;
     font-weight: bold;
     color: white;
-  }
-  
-  .App {
-    text-align: center;
-  }
-  
-  .AppContainer {
-    width: 75%;
-    margin: auto;
   }
   
   .btn_red {

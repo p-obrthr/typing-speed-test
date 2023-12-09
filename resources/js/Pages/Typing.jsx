@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "/resources/css/app.css";
 import "/resources/css/typing.css";
+import Navbar from '/resources/js/Components/Navbar.jsx';
 
 
 
@@ -188,11 +190,8 @@ function App() {
 
     return (
         
-        
-
         <div className="App">
-
-
+            <Navbar/>
             <div className="container">
                 <h1>TYPING SPEED TEST</h1>
                 <div className="generator-head">

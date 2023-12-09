@@ -29,7 +29,7 @@ Route::get('/', function () {
 
 Route::get('/', function() {
     return Inertia::render('Typing');
-});
+})->name('typing');;
 
 
 Route::get('/dashboard', function () {
